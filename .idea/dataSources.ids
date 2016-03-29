@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source name="PostgreSQL - document@localhost" uuid="6e6ecf70-c34f-40f2-aca8-8658eff7ac42">
+    <database-info product="PostgreSQL" version="9.3.11" jdbc-version="4.0" driver-name="PostgreSQL Native Driver" driver-version="PostgreSQL 9.4 JDBC4 (build 1201)">
+      <identifier-quote-string>&quot;</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="lower" quoted-identifiers="exact"/>
+    <database-model serializer="dbm" rdbms="POSTGRES" format-version="2.5">
+      <database id="1" name="document"/>
+      <schema id="2" parent="1" name="public">
+        <object-id>2200</object-id>
+        <comment>standard public schema</comment>
+        <introspection-state-number>856</introspection-state-number>
+        <introspection-timestamp>2016-03-29.10:26:51.317</introspection-timestamp>
+      </schema>
+      <sequence id="3" parent="2" name="hibernate_sequence">
+        <object-id>24740</object-id>
+        <state-number>856</state-number>
+      </sequence>
+      <table id="4" parent="2" name="document">
+        <object-id>24732</object-id>
+        <state-number>855</state-number>
+      </table>
+      <column id="5" parent="4" name="id">
+        <state-number>855</state-number>
+        <mandatory>1</mandatory>
+        <data-type>bigint</data-type>
+      </column>
+      <column id="6" parent="4" name="data_incarcarii">
+        <state-number>855</state-number>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="7" parent="4" name="name">
+        <state-number>855</state-number>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="8" parent="4" name="pw">
+        <state-number>855</state-number>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="9" parent="4" name="username">
+        <state-number>855</state-number>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="10" parent="4" name="versiunea">
+        <state-number>855</state-number>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <index id="11" parent="4" name="document_pkey">
+        <object-id>24738</object-id>
+        <columns>id</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <key id="12" parent="4" name="document_pkey">
+        <columns>id</columns>
+        <underlying-index>document_pkey</underlying-index>
+        <primary>1</primary>
+      </key>
+    </database-model>
+  </data-source>
+</component>

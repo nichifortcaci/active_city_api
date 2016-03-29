@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/untitled7.iml" filepath="$PROJECT_DIR$/untitled7.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/spring-cat.iml" filepath="$PROJECT_DIR$/.idea/modules/spring-cat.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/spring-cat_main.iml" filepath="$PROJECT_DIR$/.idea/modules/spring-cat_main.iml" group="spring-cat" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/spring-cat_test.iml" filepath="$PROJECT_DIR$/.idea/modules/spring-cat_test.iml" group="spring-cat" />
     </modules>
   </component>
 </project>

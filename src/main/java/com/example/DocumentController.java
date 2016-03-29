@@ -5,31 +5,29 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-/**
- * Created by nick on 2/7/16.
- */
+
 @RestController
-@RequestMapping(path = "/api/cat")
-public class CatController {
-    private CatRepository repository;
+@RequestMapping(path = "/api/document")
+public class DocumentController {
+    private DocumentRepository repository;
 
     @Autowired
-    public CatController(CatRepository repository) {
+    public DocumentController(DocumentRepository repository) {
         this.repository = repository;
     }
 
     @RequestMapping(path = "",method = RequestMethod.GET)
-    public List<Cat> getAll(){
+    public List<Document> getAll(){
         return repository.findAll();
     }
 
     @RequestMapping(path = "",method = RequestMethod.POST)
-    public Cat insert(@RequestBody Cat cat){
+    public Document insert(@RequestBody Document cat){
         return repository.save(cat);
     }
 
     @RequestMapping(path = "/{id}")
-    public Cat getOne(@PathVariable long id){
+    public Document getOne(@PathVariable long id){
         return repository.findOne(id);
     }
 
@@ -41,7 +39,7 @@ public class CatController {
     }
 
     @RequestMapping(path = "/findByName/{name}")
-    public List<Cat> findByName(@PathVariable String name){
+    public List<Document> findByName(@PathVariable String name){
         return repository.findByName(name);
     }
 }
