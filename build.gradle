@@ -13,7 +13,7 @@ buildscript {
 apply plugin: 'java'
 apply plugin: 'eclipse'
 apply plugin: 'idea'
-apply plugin: 'spring-boot' 
+apply plugin: 'spring-boot'
 
 jar {
 	baseName = 'gs-uploading-files'
@@ -33,6 +33,10 @@ dependencies {
 
 	compile("org.springframework.boot:spring-boot-starter-thymeleaf")
 	testCompile("junit:junit")
+
+	compile("org.springframework.boot:spring-boot-starter-thymeleaf")
+	compile("org.springframework.boot:spring-boot-starter-hateoas")
+	compile("org.springframework.boot:spring-boot-devtools")
 
 	runtime('org.postgresql:postgresql')
 

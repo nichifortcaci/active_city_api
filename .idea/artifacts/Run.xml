@@ -1,0 +1,6 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="Run">
+    <output-path>$PROJECT_DIR$/classes/artifacts/Run</output-path>
+    <root id="archive" name="Run.war" />
+  </artifact>
+</component>

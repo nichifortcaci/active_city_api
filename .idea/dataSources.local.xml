@@ -1,10 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="dataSourceStorageLocal">
-    <data-source name="PostgreSQL - document@localhost" uuid="6e6ecf70-c34f-40f2-aca8-8658eff7ac42">
+    <data-source name="PostgreSQL - wso2@192.168.16.107" uuid="8648e9de-3e9b-412d-825b-e5862c7c35d4">
       <secret-storage>master_key</secret-storage>
-      <user-name>doc_admin</user-name>
-      <schema-pattern>document.public</schema-pattern>
+      <user-name>postgres</user-name>
+      <introspection-scope>wso2:pg_catalog,postgres,public</introspection-scope>
+      <resolve-scope>wso2:postgres,public</resolve-scope>
+    </data-source>
+    <data-source name="PostgreSQL - jdbc:postgresql://192.168.16.233 :5432/city" uuid="0ebaaac2-6310-468c-aa40-2d063c60127b">
+      <secret-storage>master_key</secret-storage>
+      <user-name>postgres</user-name>
+      <introspection-scope>city:public,pg_catalog,postgres</introspection-scope>
+      <resolve-scope>city:public,postgres</resolve-scope>
     </data-source>
   </component>
 </project>
